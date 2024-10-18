@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+#calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #d0d0d0;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12) {
+    background-color: #ff9f00; /* Warna tombol operasi */
+    color: white;
+}
+
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover {
+    background-color: #ff7f00; /* Warna saat hover untuk operasi */
+}
+
+button:nth-child(1),
+button:nth-child(5),
+button:nth-child(9) {
+    background-color: #2196F3; /* Warna tombol angka */
+    color: white;
+}
+
+button:nth-child(1):hover,
+button:nth-child(5):hover,
+button:nth-child(9):hover {
+    background-color: #1976D2; /* Warna saat hover untuk angka */
+}
